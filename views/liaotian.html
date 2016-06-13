@@ -1,0 +1,9 @@
+<div class="four-box" id="liaotian">
+	<div class="four">
+		<div class="content" ng-repeat="v in list" ng-class="{me:v.isme}">
+			<div ng-if="!v.isme" class="content-img-left {{image}}"></div>
+			<div ng-if="v.isme" class="content-img-right {{ziji}}"></div>
+			<p>{{v.xinxi}}</p>
+		</div>
+	</div>
+</div>

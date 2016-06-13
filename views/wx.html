@@ -1,0 +1,17 @@
+<!-- 微信 -->
+<div class="four-box" id="weixin">
+    <div class="four" ng-show="title==='1'" >
+    	<div class="xiaoxi" ng-repeat="v in friendslist" ng-init="show=false" ng-class="{'show-delete':show}" ng-swipe-left="show=true" ng-swipe-right="show=false">
+    		<div class="bao">
+    			<div class="touxiang {{v.image}}"></div>
+				<div class="message">
+					<span class="name">{{v.name}}</span>
+					<span class="neirong">{{v.message}}</span>
+				</div>
+			<div class="time">{{v.time}}</div>
+    		</div>
+			<div class="delete" ng-click="deletefriends($index)">删除</div>
+			<a href="#/liaotian/{{$index}}"></a>
+		</div>
+    </div>
+ </div>   

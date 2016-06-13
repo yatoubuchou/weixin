@@ -1,0 +1,42 @@
+<!-- 通讯录 -->
+<div class="four-box four-txl">
+    <div class="four" ng-show="title==='2'" >
+    		<div class="tj"><span>朋友推荐</span></div>
+		    <div class="tx">
+		        <div class="tx-center">
+		            <div class="tx-touxiang tuij"></div>
+		            <div class="tx-name"></div>
+		        </div>
+		    </div>
+		    <div class="tx">
+		        <div class="tx-center">
+		            <div class="tx-touxiang ql"></div>
+		            <div class="tx-name">群聊</div>
+		        </div>
+		    </div>
+		    <div class="tx">
+		        <div class="tx-center">
+		            <div class="tx-touxiang bq"></div>
+		            <div class="tx-name">标签</div>
+		        </div>
+		    </div>
+		    <div class="tx">
+		        <div class="tx-center">
+		            <div class="tx-touxiang gzh"></div>
+		            <div class="tx-name">公众号</div>
+		        </div>
+		    </div>   
+	        <div ng-repeat="v in lianxiren">
+			    <div class="zimu" data-key="{{v.key}}"><span>{{v.key}}</span></div>
+			    
+			    <div class="tx" ng-repeat="a in v.people">
+			        <div class="tx-center">
+			            <div class="tx-touxiang {{a.touxiang}}"></div>
+			            <div class="tx-name">{{a.name}}</div>
+			        </div>
+			    </div>
+		    </div>
+
+        <uq-zimu-list></uq-zimu-list>	
+    </div>
+</div>

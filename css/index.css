@@ -1,0 +1,768 @@
+@charset "UTF-8";
+body, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: '微软雅黑';
+  background: #EBEBEB;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 100px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 44.44444px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 52.08333px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 53.33333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 57.5px;
+  }
+}
+
+@media screen and (min-width: 435px) {
+  html {
+    font-size: 60.41667px;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  html {
+    font-size: 63.88889px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 88.88889px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 222.22222px;
+  }
+}
+
+.toubu {
+  width: 100%;
+  height: 1.5rem;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1rem;
+  background: #393A3E;
+  z-index: 99999;
+}
+
+.header .weixin {
+  float: left;
+  margin-left: 0.3rem;
+  height: 100%;
+  line-height: 1rem;
+  font-size: 0.35rem;
+  color: #fff;
+}
+
+.header .icons {
+  width: 25%;
+  height: 100%;
+  float: right;
+}
+
+.header .icon-search {
+  margin-top: 0.25rem;
+  width: 0.48rem;
+  height: 0.48rem;
+  float: left;
+  background: url(../image/search.png) center center no-repeat;
+  background-size: 100%;
+  margin-right: 0.6rem;
+}
+
+.header .icon-add {
+  margin-top: 0.25rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  float: left;
+  background: url(../image/add.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.four-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.four {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background: #EBEBEB;
+}
+
+/*通讯录*/
+.tj {
+  width: 100%;
+  height: 0.35rem;
+  font-size: 0.23rem;
+  line-height: 0.35rem;
+  color: #828282;
+}
+
+.tj span {
+  margin-left: 0.2rem;
+}
+
+.tx {
+  width: 100%;
+  height: 1.05rem;
+  background: #fff;
+}
+
+.tx-center {
+  width: 90%;
+  height: 100%;
+  margin-left: 0.25rem;
+  border-bottom: 1px solid #D7D7D7;
+}
+
+.tx-touxiang {
+  float: left;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-size: 100%;
+  margin-top: 0.15rem;
+}
+
+.tuij {
+  background: url(../image/tj.png) center center;
+}
+
+.tx-name {
+  float: left;
+  margin-left: 0.25rem;
+  width: 60%;
+  height: 100%;
+  line-height: 1.05rem;
+  font-size: 0.32rem;
+  color: #555;
+}
+
+.ql {
+  background: url(../image/ql.png) center center;
+}
+
+.bq {
+  background: url(../image/bq.png) center center;
+}
+
+.gzh {
+  background: url(../image/gzh.png) center center;
+}
+
+.zimu {
+  width: 100%;
+  height: 0.45rem;
+  font-size: 0.2rem;
+  line-height: 0.45rem;
+  color: #555;
+}
+
+.zimu span {
+  margin-left: 0.2rem;
+}
+
+.zimu-list {
+  position: fixed;
+  right: 0.2rem;
+  top: 1.8rem;
+}
+
+.zimu-list li {
+  text-align: center;
+  font-size: 0.17rem;
+  padding: 0.04rem;
+}
+
+/*微信*/
+#weixin a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 6rem;
+  height: 100%;
+  z-index: 999;
+}
+
+.xiaoxi {
+  position: relative;
+  width: 100%;
+  height: 1.25rem;
+  background: #fff;
+  margin-top: 0.02rem;
+}
+
+.touxiang {
+  float: left;
+  margin-top: 0.15rem;
+  margin-left: 0.3rem;
+  width: 0.97rem;
+  height: 0.97rem;
+  background-size: 100%;
+}
+
+.touxiang1 {
+  background: url(../image/tx-01.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.touxiang2 {
+  background: url(../image/tx-02.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.touxiang3 {
+  background: url(../image/tx-03.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.touxiang4 {
+  background: url(../image/tx-04.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.touxiang5 {
+  background: url(../image/tx-05.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.touxiang6 {
+  background: url(../image/tx-06.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.touxiang7 {
+  background: url(../image/tx-07.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.touxiang8 {
+  background: url(../image/tx-08.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.touxiang9 {
+  background: url(../image/tx-09.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.touxiang10 {
+  background: url(../image/tx-010.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.ziji {
+  background: url(../image/touxiang.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.message {
+  float: left;
+  margin-top: 0.08rem;
+  margin-left: 0.3rem;
+  width: 40%;
+  height: 1.00rem;
+}
+
+.name {
+  margin-top: 0.15rem;
+  width: 100%;
+  display: block;
+  font-size: 0.3rem;
+  color: #303030;
+}
+
+.neirong {
+  margin-top: 0.05rem;
+  width: 100%;
+  display: block;
+  font-size: 0.24rem;
+  color: #989898;
+}
+
+.time {
+  float: right;
+  font-size: 0.12rem;
+  color: #989898;
+  margin-right: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.xiao:nth-child(1) {
+  margin-top: 0;
+}
+
+.bao {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+  background: #fff;
+  transition: all .3s ease;
+}
+
+.xiaoxi.show-delete .bao {
+  transform: translateX(-1rem);
+}
+
+.delete {
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0.15rem;
+  width: 0.7rem;
+  height: 0.4rem;
+  border-radius: 0.12rem;
+  background: #CF4934;
+  font-size: 0.12rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.4rem;
+  z-index: 9;
+}
+
+/*发现*/
+.gn {
+  margin-top: 0.35rem;
+  width: 100%;
+  height: 0.98rem;
+  background: #fff;
+}
+
+.gn::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.gn1 {
+  margin-top: 0;
+}
+
+.gn-center {
+  width: 90%;
+  height: 100%;
+  margin-left: 0.3rem;
+  border-top: 1px solid #EBEBEB;
+}
+
+.float {
+  float: left;
+}
+
+.pyq-icon, .sys-icon, .yyy-icon, .fjdr-icon, .plp-icon, .gw-icon, .yx-icon, .xc-icon, .sc-icon, .qb-icon, .kb-icon, .bq-icon, .sz-icon {
+  width: 0.45rem;
+  height: 0.45rem;
+  margin: 0.25rem 0.4rem 0 0.1rem;
+}
+
+.pyq-icon {
+  background: url(../image/pyq.png) no-repeat;
+  background-size: 100%;
+}
+
+.sys-icon {
+  background: url(../image/sys.png) no-repeat;
+  background-size: 100%;
+}
+
+.yyy-icon {
+  background: url(../image/yyy.png) no-repeat;
+  background-size: 100%;
+}
+
+.fjdr-icon {
+  background: url(../image/fjdr.png) no-repeat;
+  background-size: 100%;
+}
+
+.plp-icon {
+  background: url(../image/plp.png) no-repeat;
+  background-size: 100%;
+}
+
+.gw-icon {
+  background: url(../image/gw.png) no-repeat;
+  background-size: 100%;
+}
+
+.yx-icon {
+  background: url(../image/yx.png) no-repeat;
+  background-size: 100%;
+}
+
+.icon-font {
+  font-size: 0.3rem;
+  color: #313131;
+  margin: 0.3rem 0 0 0;
+}
+
+/*我*/
+.myself {
+  width: 100%;
+  height: 1.62rem;
+  background: #fff;
+  margin-top: 0.35rem;
+}
+
+.touxiang_me {
+  float: left;
+  margin-top: 0.15rem;
+  margin-left: 0.3rem;
+  width: 1.30rem;
+  height: 1.30rem;
+  background: url(../image/touxiang.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.jieshao {
+  float: left;
+  margin-top: 0.15rem;
+  margin-left: 0.3rem;
+  width: 40%;
+  height: 1.30rem;
+}
+
+.name {
+  margin-top: 0.25rem;
+  width: 100%;
+  display: block;
+  font-size: 0.3rem;
+  color: #303030;
+}
+
+.num {
+  margin-top: 0.1rem;
+  width: 100%;
+  display: block;
+  font-size: 0.3rem;
+  color: #989898;
+}
+
+.ewm {
+  float: right;
+  margin-right: 0.5rem;
+  margin-top: 0.6rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  background: url(../image/ewm.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.gn_me {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 0.98rem;
+  background: #fff;
+}
+
+.gn_me::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.gn_me.gn1 {
+  margin: 0;
+}
+
+.xc-icon {
+  background: url(../image/xc.png) no-repeat;
+  background-size: 100%;
+}
+
+.sc-icon {
+  background: url(../image/sc.png) no-repeat;
+  background-size: 100%;
+}
+
+.qb-icon {
+  background: url(../image/qb.png) no-repeat;
+  background-size: 100%;
+}
+
+.kb-icon {
+  background: url(../image/kb.png) no-repeat;
+  background-size: 100%;
+}
+
+.bq-icon {
+  background: url(../image/bq1.png) no-repeat;
+  background-size: 100%;
+}
+
+.sz-icon {
+  background: url(../image/sz.png) no-repeat;
+  background-size: 100%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.10rem;
+  background: #fff;
+  border-top: 1px solid #EBEBEB;
+  z-index: 9999;
+}
+
+.footer a {
+  display: block;
+}
+
+.type {
+  float: left;
+  width: 1.10rem;
+  height: 1.10rem;
+  margin-left: 0.55rem;
+}
+
+.type span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #949494;
+}
+
+.wx-img, .txl-img, .fx-img, .me-img {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: auto;
+  margin-top: 0.1rem;
+}
+
+.wx-img {
+  background: url(../image/wx.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.txl-img {
+  background: url(../image/txl.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.fx-img {
+  background: url(../image/fx.png) center center no-repeat;
+  background-size: 90%;
+}
+
+.me-img {
+  background: url(../image/me.png) center center no-repeat;
+  background-size: 95%;
+}
+
+.wx.active span {
+  color: #13CD6F;
+}
+
+.wx.active .wx-img {
+  background: url(../image/wx_active.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.txl.active span {
+  color: #13CD6F;
+}
+
+.txl.active .txl-img {
+  background: url(../image/txl_active.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.fx.active span {
+  color: #13CD6F;
+}
+
+.fx.active .fx-img {
+  background: url(../image/fx_active.png) center center no-repeat;
+  background-size: 90%;
+}
+
+.me.active span {
+  color: #13CD6F;
+}
+
+.me.active .me-img {
+  background: url(../image/me_active.png) center center no-repeat;
+  background-size: 95%;
+}
+
+.add_hide {
+  width: 4rem;
+  height: auto;
+  background: #18191D;
+  position: absolute;
+  top: 1.5rem;
+  right: 0.25rem;
+  z-index: 9999;
+  box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.add_hide_list {
+  width: 100%;
+  height: 0.95rem;
+  margin-top: 1px;
+  background: #393A3E;
+}
+
+.add_hide_img {
+  float: left;
+  width: 1.13rem;
+  height: 100%;
+}
+
+.add_hide_font {
+  float: left;
+  font-size: 0.33rem;
+  color: #fff;
+  line-height: 0.95rem;
+}
+
+.fqql {
+  background: url(../image/fqql.png);
+  background-size: 100%;
+}
+
+.tjpy {
+  background: url(../image/tjpy.png);
+  background-size: 100%;
+}
+
+.sys_hide {
+  background: url(../image/sys_hide.png);
+  background-size: 100%;
+}
+
+.sfk {
+  background: url(../image/sfk.png);
+  background-size: 100%;
+}
+
+.bz {
+  background: url(../image/bz.png);
+  background-size: 100%;
+}
+
+.xiaoxi.ng-leave {
+  transition: all .6s ease;
+}
+
+.xiaoxi.ng-leave-active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+#liaotian .content {
+  width: 100%;
+  height: 1.10rem;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#liaotian .content p {
+  position: absolute;
+  left: 1.3rem;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 4.5rem;
+  height: 100%;
+  line-height: 1.10rem;
+  font-size: 0.3rem;
+  color: #000;
+}
+
+#liaotian .content.me p {
+  position: absolute;
+  left: 1.4rem;
+  top: 0;
+  text-align: right;
+}
+
+.content-img-left {
+  position: absolute;
+  left: 0.3rem;
+  top: 0.15rem;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.content-img-right {
+  position: absolute;
+  right: 0.3rem;
+  top: 0.15rem;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+#content {
+  position: absolute;
+  top: 1rem;
+  bottom: 1.2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: auto;
+}

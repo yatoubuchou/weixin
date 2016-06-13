@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en" ng-app="weixin">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>weixin</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/angular.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/angular-animate.js"></script>
+	<script src="./js/angular-touch.js"></script>
+	<script src="./js/angular-route.js"></script>
+	<script src="./js/index.js"></script>
+</head>
+<body ng-controller="indexCtrl">
+	<uq-title></uq-title>
+	<div id="content">
+		<ng-view></ng-view>	
+	</div>
+    <uq-footer></uq-footer>
+</body>
+</html>
